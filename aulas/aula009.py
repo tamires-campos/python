@@ -21,3 +21,5 @@ print(dividido[0])
 
 print(dividido[2][3]) 
 #aqui ele pega a frase dividida e a palavra q está em [2] que seria "video" ele irá me mostrar a [3] letra
+
+print
