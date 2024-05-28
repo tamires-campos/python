@@ -1,5 +1,5 @@
-n = input("Digite algo: ")
-print("O tipo primitivo desse valor", type(n))
+n = input("Digite algo:\033[1;32m ")
+print("\033[mO tipo primitivo desse valor", type(n))
 print("Só tem espaços?", n.isspace())
 print("É um número?", n.isnumeric())
 print("É alfabético?", n.isalpha())

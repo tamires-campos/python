@@ -12,4 +12,6 @@ co = float(input("Comprimento do cateto oposto: "))
 ca = float(input("Comprimento do cateto adjacente: "))
 hi = hypot(co,ca)
 
-print(f"A hipotenusa vai medir {hi:.2f}")
+print(f"A hipotenusa vai medir \033[1;31;43m{hi:.2f}\033[m")
+
+# padrao = \033[m
