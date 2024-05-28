@@ -4,7 +4,7 @@
 #       L>  X = STYLE ; TEXT ; BACK
 # \033[0;33;44m  -> CÓDIGO DE COR
 
-# STYLE ->  O = NONE   1 = BOLD   4 = UNDERLINE (sublinhar)   E   7 = inverter posições
+# STYLE ->  O = NONE/RESET   1 = BOLD/BRIGHT   2 = DIM   4 = UNDERLINE (sublinhar)   E   7 = inverter posições
 # TEXTE ->  30 AO 37  -> 30=BRANCO  31=VERMELHO  32=VERDE  33=AMARELO  34=AZUL  35=MAGENTA  36=CIANO  37=CINZA
 # BACK  ->  40 AO 47  -> 40=BRANCO  41=VERMELHO  42=VERDE  43=AMARELO  44=AZUL  45=MAGENTA  46=CIANO  47=CINZA
 
@@ -21,7 +21,7 @@
 #print("\033[7;33;46mOlá, mundo!\033[m")
 
 
-nome = "Tamires"
+"""nome = "Tamires"
 cor = {"padrao": "\033[m",
         "vermelho": "\033[4;31m",
         "verde": "\033[4;32m",
@@ -30,4 +30,22 @@ cor = {"padrao": "\033[m",
         "rosa": "\033[4;35m",
         "azul": "\033[4;36m"}
 
-print(f"Olá! Muito prazer em te conhecer,\033[m {cor["azul"]}{nome}\033[m!!!!")
+print(f"Olá! Muito prazer em te conhecer,\033[m {cor["azul"]}{nome}\033[m!!!!")"""
+
+
+
+
+
+
+# USANDO COLORAMA
+from colorama import Fore, Back, Style, init
+
+#Inicializa o colorama
+init()
+
+print(Fore.RED + "Este texto é vermelho")
+print(Back.GREEN + "Este texto tem fundo verde")
+print(Style.BRIGHT + "Este texto é brilhante" + Style.RESET_ALL)
+
+# Combinando estilos
+print(Fore.BLUE + Back.YELLOW + "Texto azul com fundo amarelo" + Style.RESET_ALL)
