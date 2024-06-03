@@ -16,12 +16,12 @@ porcentagem = salario * 0.3
 # 30% do salário = salário * 0,3
 
 print()
-print(f"Para pagar uma casa de R${valor_casa:.2f} em {tempo_pagamento} anos,\na prestação será de {prestação:.2f}")
+print(f"Para pagar uma casa de \033[7;37mR${valor_casa:.2f} em {tempo_pagamento} anos, a prestação será de {prestação:.2f}\033[m")
 print()
 if prestação <= (salario * 0.3):
-    print("Seu emprétimo foi APROVADO!")
+    print("\033[1;32mSeu emprétimo foi APROVADO!\033[m")
     print(f"O valor das prestações serão de {prestação:.2f} por mes por {tempo_pagamento} ano")
     print(f"Você terminará de pagar em {meses} meses")
 else:
-    print("Seu empréstimo foi REPROVADO")
+    print("\033[1;31mSeu empréstimo foi REPROVADO\033[m")
     print(f"Pois a prestação fica mais que 30% do seu salário que seria: {porcentagem}")    
