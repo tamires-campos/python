@@ -1,6 +1,10 @@
 s = 0
-for c in range(1, 500, 2):
+cont = 0
+for c in range(1, 501, 2):
     if c % 3 == 0:
-        s += c
-    print(c)
-print(s)
+        cont = cont + 1
+        s += c # isso é igual a "soma = soma + c"
+        
+    print(c, end=" ")
+print(" ")
+print(f"A soma dos {cont} valores é: {s}")
