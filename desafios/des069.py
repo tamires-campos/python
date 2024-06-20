@@ -1,34 +1,26 @@
-soma_idade = 0
-media_idade = 0
-maior_idade_homem = 0
-nome_velho = ""
-totmulher20 = 0
-
-cadastro = "CADASTRE UMA PESSOA"
-
+totmulher20 = 0  # total de mulherres menores que 20 anos
+maioridade = 0   # pessoas com mais de 18 anos
+tothomens = 0    # total de homens
+print("-" * 20)
+print(f"{"CADASTRE UMA PESSOA":^20}")
+print("-" * 20)
 while True:
-    print("-" * 20)
-    print(f"{cadastro:^20}")
-    print("-" * 20)
     idade = int(input("Idade: "))
-    sexo = str(input("Sexo [M/F]: ")).strip()
-    soma_idade += idade
-    
-    quer = str(input("Quer continuar? [S/N]")).strip().upper()[0]
-    if quer == "Nn":
+    sexo = " "
+    while sexo not in "MF":  # enquanto o sexo nao for M ou F ele irá aparecer novamente a pergunta
+        sexo = str(input("Sexo [M/F]: ")).strip().upper()[0]
+    if idade >= 18:
+        maioridade += 1    
+    if sexo == "M":
+        tothomens += 1    
+    if sexo == "F" and idade < 20:
+        totmulher20 += 1    
+    resp = " "
+    while resp not in "SN": # enquanto a resp nao for S ou N ele irá perguntar novamente
+        resp = str(input("Quer continuar? [S/N]")).strip().upper()[0]
+    if resp == "N":
         break
-    
-    if p == 1 and sexo in "Mm":
-        maior_idade_homem = idade
-        nome_velho = nome
-    if sexo in "Mm" and idade > maior_idade_homem:
-        maior_idade_homem = idade
-        nome_velho = nome
-    if sexo in "Ff" and idade < 20:
-        totmulher20 += 1
-        
-media_idade = soma_idade / 4
-
-print(f"A média de idade do grupo é de {media_idade} anos")
-print(f"O home mais melho tem {maior_idade_homem} e se chama {nome_velho}")
+print(f"Existe {maioridade} maiores de 18 anos")
+print(f"foram cadrastrados {tothomens} homens")
 print(f"Ao todo são {totmulher20} mulheres com menos de 20 anos")
+
