@@ -1,5 +1,5 @@
 nome = input("Qual é o seu nome? ")
-print(f"Prazer em te conhecer {nome:=^20}!")
+print(f"Prazer em te conhecer {nome:=^20}")
 
 # :20 faz com que o nome seja escrito em 20 caracteres
 # :>20 faz com que fique alinhado a direita

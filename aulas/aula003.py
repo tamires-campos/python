@@ -10,7 +10,7 @@ print(n)
 
 n = input("Digite algo: ")
 print(n.isnumeric())
-#esse .isnumeric() irá verificar se o que eu digitei é um número ou nao me retornando true ou false
+#esse .isnumeric() irá verificar se o que eu digitei "é um número ou nao" me retornando true ou false
 # .isalpha()  - me fala se é letra
 # .isalnum()  - me fala se é letra ou num
 # .isupper()  - me fala se está somente com letras maiúsculas

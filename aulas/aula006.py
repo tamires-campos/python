@@ -2,7 +2,7 @@
 
 from math import sqrt, floor
 num = int(input("Digite um número: "))
-raiz = sqrt(num)
+raiz = sqrt(num) #perceba que assim não preciso escrever math.sqrt(num)
 
 print(f"A raiz de {num} é igual a {floor(raiz):.2f}")
 
