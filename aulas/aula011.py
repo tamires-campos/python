@@ -38,12 +38,12 @@
 
 
 
-#print("\033[7;33;46mOlá, mundo!\033[m")
+print("\033[7;33;46mOlá, mundo!\033[m")
 
 
-nome = "Tamires"
+nome = "Tamires"  #STYLE ; TEXT ; BACK  
 cor = { "padrao": "\033[m",
-        "vermelho": "\033[4;31m",
+        "vermelho": "\033[4;31m", #4 = sublinhado
         "verde": "\033[4;32m",
         "amarelo": "\033[4;33m",
         "roxo": "\033[4;34m",
@@ -51,7 +51,6 @@ cor = { "padrao": "\033[m",
         "azul": "\033[4;36m"}
 
 print(f"Olá! Muito prazer em te conhecer,\033[m {cor["azul"]}{nome}\033[m!!!!")
-
 
 
 
@@ -67,4 +66,4 @@ print(Back.GREEN + "Este texto tem fundo verde" + Style.RESET_ALL)
 print(Style.BRIGHT + "Este texto é brilhante" + Style.RESET_ALL) 
 
 # Combinando estilos
-print(Fore.BLUE + Back.YELLOW + "Texto azul com fundo amarelo" + Style.RESET_ALL)
+print(Fore.BLACK + Back.GREEN + "Texto azul com fundo amarelo" + Style.RESET_ALL)

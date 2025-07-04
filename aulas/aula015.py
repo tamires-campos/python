@@ -1,16 +1,16 @@
-'''cont = 1
-while cont <= 10:                 # enquanto isso for verdade ele irá fazer a contição 
-    print(cont, " -> ", end="")
-    cont += 1
-print("Acabou")'''
-
-
-
 cont = 1
-while True:                     # como já colocamos como verdade ele irá fazer sempre... só irá parar se tiver o comando break ou se interromper o programa 
-    print(cont, " -> ", end="")
+while cont <= 10:                 # enquanto isso for verdade ele irá fazer a contição 
+    print(cont, " -> ", end="")  # end=""  serve para continuar na mesma linha
     cont += 1
 print("Acabou")
+
+
+
+'''cont = 1
+while True:                     # como já colocamos como verdade ele irá fazer sempre... só irá parar se tiver o comando break ou se interromper o programa 
+    print(cont, " -> ", end="")  # end=""  serve para continuar na mesma linha
+    cont += 1
+print("Acabou")'''
 
 
 

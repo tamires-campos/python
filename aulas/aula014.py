@@ -3,7 +3,8 @@ for c in range(1, 10):
     print(c)
 print("Fim")
 
-#UTILIZANDO WHIE
+
+#UTILIZANDO WHILE = Enquanto
 c = 1
 while c < 10:  #Enquanto C for menor de 10 
     print(c)   # irá mostrar valor de C
@@ -23,7 +24,7 @@ print("Fim")
 
 
 n = 1 
-while n != 0:
+while n != 0: # "!=" = Diferente - enquanto n for diferente de 0
     n = int(input("Digite um valor: ")) # aqui irá digitar um valor até digitar o valor zero
     
     
@@ -42,10 +43,10 @@ print("Fim")
 
 n = 1
 par = impar = 0
-while n != 0:
+while n != 0:  #enquanto n for diferente de zero
     n = int(input("Digite um valor: "))
     if n != 0:               # aqui seria para não contabilizar o zero como número par
-        if n % 2 == 0:
+        if n % 2 == 0: #se o numero dividido por 2 for igual a zero - sig que é par
             par += 1
         else:
             impar +=1
